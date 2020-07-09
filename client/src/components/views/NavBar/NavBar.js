@@ -22,7 +22,10 @@ function NavBar() {
       style={{ position: "fixed", zIndex: 5, width: "100%" }}
     >
       <div className="menu__logo">
-        <img src={logo} alt="logo" />
+        <a href="/">
+          {" "}
+          <img src={logo} alt="logo" />{" "}
+        </a>
       </div>
       <div className="menu__container">
         <div className="menu_left">
@@ -32,6 +35,7 @@ function NavBar() {
           <RightMenu mode="horizontal" />
         </div>
         <Button
+          style={{ background: "white", color: "black", borderColor: "black" }}
           className="menu__mobile-button"
           type="primary"
           onClick={showDrawer}
